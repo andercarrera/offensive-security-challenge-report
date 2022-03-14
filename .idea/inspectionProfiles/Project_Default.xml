@@ -1,0 +1,26 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N803" />
+          <option value="N802" />
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="flask_app.payment.application.model_payment.BaseModel.__table__" />
+          <option value="sqlalchemy.exc" />
+          <option value="flask_app.machine.application.model_machine.BaseModel.__table__" />
+          <option value="flask_app.delivery.application.model_delivery.BaseModel.__table__" />
+          <option value="flask_app.client.application.model_client.BaseModel.__table__" />
+          <option value="flask_app.order.application.model_order.BaseModel.__table__" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
