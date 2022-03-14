@@ -1,10 +1,10 @@
 ---
-title: "Offensive Security Certified Professional Exam Report"
-author: ["ander.carrera@alumni.mondragon.edu.com"]
-date: "2022-03-07"
-subject: "Markdown"
-keywords: [Markdown, Example]
-subtitle: "Offensive Security challenge report"
+title: "Offensive Security Challenge Report"
+author: ["ander.carrera@alumni.mondragon.edu"]
+date: "2022-03-14"
+subject: "Offensive Security"
+keywords: [Offensive Security, Report]
+subtitle: "Ander Carrera"
 lang: "en"
 titlepage: true
 titlepage-color: "1E90FF"
@@ -36,12 +36,13 @@ This penetration testing report must be completely filled out by the student, an
 - Methodologies analysis
 - Methodologies selection
 - Auditory with the selected methodology
-    - Pentesting report
+  - Pentesting report
 
 # Methodologies analysis
 These are the five most commonly used methodologies out there:
+
 ## OSSTMM
-OSSTMM (Open Source Security Testing Methodology Manual) provides a methodology for a comprehensive safety test, referred to in this document as an OSSTMM audit. An OSSTMM audit is an accurate measurement of safety at the operational level, which avoids assumptions and anecdotal evidence.
+OSSTMM (Open Source Security Testing Methodology Manual) provides a methodology for a comprehensive safety test, referred to in this document as an OSSTMM audit. An OSSTMM audit is an accurate measurement of safety at the operational level, which avoids assumptions and anecdotal evidence. [1]
 
 As a methodology, it is designed to be consistent and repeatable. As an open source project, it allows any security testing professional to contribute ideas for more accurate, concrete and efficient security testing. It also allows for the free dissemination of information and intellectual property.
 
@@ -53,9 +54,10 @@ Environments are significantly more complex compared to previous years due to ev
 - A set of attack surface metrics, called ravs, provides a powerful and highly flexible tool that provides a graphical representation of state and shows state changes over time.
 - This integrates well with a "dashboard" that is beneficial for internal management and staff. And also external testing, which allows comparison/combination of the two.
 - It can perform quantitative risk management of the report with OSSTMM audit findings, providing an improved result due to a free and more accurate results error.
+
 ## ISSAF
 ISSAF (Information Systems Assessment Framework)
-is designed to evaluate your network, system and control applications. It is focused on three phases and nine evaluation steps.
+is designed to evaluate your network, system and control applications. It is focused on three phases and nine evaluation steps. [2]
 
 The approach includes the following three phases:
 
@@ -108,13 +110,13 @@ All information that is created and/or stored on the test systems must be remove
 ## OWASP
 **What is OWASP**
 
-OWASP (Open Web Application Security Project) is a worldwide non-profit project that seeks to improve software security in general. To this end, the organization has provided a series of tools and documents that explain the most common security holes in any information system. Needless to say, all OWASP materials are freely available (free of charge) for free consultation and use.
+OWASP (Open Web Application Security Project) is a worldwide non-profit project that seeks to improve software security in general. To this end, the organization has provided a series of tools and documents that explain the most common security holes in any information system. Needless to say, all OWASP materials are freely available (free of charge) for free consultation and use. [3]
 
 **What exactly are its contents?**
 
 Currently OWASP actually has several projects in which the categories Tool Projects, Code Projects and Documentation Projects stand out. The best known documentation project is the TOP TEN, which lists the 10 most common security risks and how to prevent them. In this top, you will recognize terms such as SQL INJECTION, Cross-Site Scripting (XSS) and Broken Authentication. Without further ado, I leave you with this list of ten security risks or vulnerabilities.
 
-## OWASP Top Ten
+### OWASP Top Ten
 ![Mapping](https://owasp.org/www-project-top-ten/assets/images/mapping.png)
 
 **A01: 2021 - Broken Access Control (formerly A05 OWASP Top 10 2017)**
@@ -171,14 +173,14 @@ Data shows that there is a low incidence rate for this category that was just ad
 
 
 ## PTES
-PTES (Penetration Testing Execution Standard) is a standard which provides a common language to be followed by all penetration testing professionals and security assessment professionals.
+PTES (Penetration Testing Execution Standard) is a standard which provides a common language to be followed by all penetration testing professionals and security assessment professionals. [4]
 
 PTES provides the client with a reference on the security posture so that they are in a better position to perceive the findings obtained during a penetration test.
 
 PTES is designed as the minimum necessary to be performed as part of a complete penetration test. The standard contains many different levels of services, which should be part of advanced penetration testing.
 
 ## NIST (NIST SP800-115)
-NIST (The National Institute of Standards  and Technology) was published in September 2008 by the U.S. government's National Institute of Standards and Technology (NIST). It describes guidelines on how an Information Security Assessment (ISA) should be conducted and conceptualizes it as the process of determining how effectively an entity is assessed against specific security objectives. It defines as assets and objects of evaluation the servers, data networks, procedures and people.
+NIST (The National Institute of Standards  and Technology) was published in September 2008 by the U.S. government's National Institute of Standards and Technology (NIST). It describes guidelines on how an Information Security Assessment (ISA) should be conducted and conceptualizes it as the process of determining how effectively an entity is assessed against specific security objectives. It defines as assets and objects of evaluation the servers, data networks, procedures and people. [5]
 
 Three assessment methods can be used to perform ESI:
 
@@ -197,45 +199,38 @@ NIST SP 800-115 proposes an ESI process composed of at least three phases:
 
 # Methodologies selection
 
-I utilized a widely adopted approach to performing penetration testing that is effective in testing how well the Offensive Security Exam environments is secured.
-Below is a breakout of how I was able to identify and exploit the variety of systems and includes all individual vulnerabilities found.
+For this document, one of the methodologies explained above will be selected.
 
-<!-----
+In this case, the cybersecurity audit will be carried out following the PTES methodology, since it is the simplest and has the fewest phases. In addition, it aims to unite the efforts of analysts and security experts to create a standard that can complete an audit in all its most common processes.
 
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 66
+Finally, from the 7 steps of this methodology:
 
-Conversion time: 11.168 seconds.
+1. Pre-engagement Interactions
 
+2. Intelligence Gathering
 
-Using this Markdown file:
+3. Threat Modeling
 
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
+4. Vulnerability Analysis
 
-Conversion notes:
+5. Exploitation
 
-* Docs to Markdown version 1.0β33
-* Mon Mar 14 2022 02:31:10 GMT-0700 (PDT)
-* Source doc: Challenge
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+6. Post Exploitation
 
+7. Reporting
 
-WARNING:
-You have 6 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
+These will be combined to make only 3 steps to follow in the document:
 
------>
+1. Information Gathering
+2. Exploitation
+3. Privilege Escalation
 
 
 
 # **VM1 - Metasploit - CTF**
 ## Information Gathering
 
-![alt_text](../images/image1.png "image_tooltip")
+![](https://lh6.googleusercontent.com/4cr8OPiyXA7i5Twj2nNlslZ-mRjSWwDHi_ma1qGb7BLMRZ2E-xYXYaNefrryayTzVblQfHZFQLvQF7hggD32TlMtDOV2gj0sd4rBKkdD-63gh4_WmFat_pfIgg35Vp7vMQ)
 
 
 The objective of this exercise is to obtain the flag. To do that you should be able to exploit a vulnerability and to scale privileges (post-explotation).
@@ -249,7 +244,7 @@ Download this[ .ova file](https://www.dropbox.com/s/jrttxttxb5imks9/metasploit_c
 We have been able to observe that the ftp service is active. We will check if it is possible to authenticate anonymously.
 
 
-![alt_text](../images/image2.png "image_tooltip")
+![](https://lh3.googleusercontent.com/U_9qlRJa0rcp_VaHslxoNGxwCfb9SwIviHgZVd6v3JJ8qCxd7DXTcI3G1fmCRbzRdZGKyAn9ZtSIzsH9-1zdkHPZZIiACdkkTZuGaw38uMuGTFwNo9W7gniahzX8FPs33g)
 
 
 
@@ -258,13 +253,13 @@ We have been able to observe that the ftp service is active. We will check if it
 4.- If it is possible, connect to the server and check if there is something interesting there.
 
 
-![alt_text](../images/image3.png "image_tooltip")
+![](https://lh6.googleusercontent.com/sDcnGChqwpSgarrON2YoOAgP4lL5Ct4nvoUeQM_sTjsX0SHkEn5WpcgGRR7sIJz5DwGgecmxDNAkvLofS62JlohH4t6AmZunJPsXUzWHod0Ygk1HrEvQMngc4yCLfsgKgg)
 
 
 5.- There aren't any interesting files. As we have observed that the http service was active, let's check the web page.
 
 
-![alt_text](../images/image4.png "image_tooltip")
+![](https://lh4.googleusercontent.com/DncoRx09vLCcGgGA6iMOfMTqqmKMxKDUB3Rq7NBSVqzB6IjdzbkoBjlBB9o1olzofNeVTzI9ODq-1wzZZLCG0PNUDn2zcZE67HOFd8g0_e9zjOXo5Q0S9bnxUTymymMCsQ)
 
 
 6.- The website doesn't show anything interesting either. Try dirbuster to see what services it has on the web. You can also use the command:
@@ -276,19 +271,19 @@ dirb http://192.168.56.102
 7.- In the results you can see interesting applications such as phpmyadmin, cms, drupal...
 
 
-![alt_text](../images/image5.png "image_tooltip")
+![](https://lh6.googleusercontent.com/CDPYvhxFVlSgeUQD-UGuMgrtLZFFiILKtYBbIbpsxe2sabuQ-BTWDnwCbJswZvNV7Mq_KEv0f9GdSuARz7tfN2mj1Cf0am_Ni4keYj0NWG_62Unkggk-QESYo9mt7pIOZg)
 
 
 8.- From now on, we should analyze each of these applications. We'll start with Drupal. Open the Drupal page in the browser.
 
 
-![alt_text](../images/image6.png "image_tooltip")
+![](https://lh3.googleusercontent.com/mdabs7v5reXVvcD_Uh6-xFhvlXp2N4y8RzECFoDTXCkwgDMuU02wgpxhpU3m9TZV0NlICdC8Z6AArcwVEPN97BfXhqxZT5bREy8FDzWisfJH8ojHoYHK5wbUOVS8kypy4A)
 
 
 9.- We need to know the version of drupal to look for exploits.
 
 
-![alt_text](../images/image7.png "image_tooltip")
+![](https://lh5.googleusercontent.com/l3BgdKcJH2WL8x_d0-mlorxAWAaqQSGahn7c5PzqrVfBa03JfkJOZNgqDuXGQZCF8coDz0ky0ifZK1ttY8irheNyMpmS1MI3Td2LKZXQzy58tt3yG9GAxIHE8tUCwTp7zA)
 
 
 10.- Search an exploit for that version of the application. You can use searchsploit or directly metasploit.
@@ -300,37 +295,37 @@ dirb http://192.168.56.102
 13.- Configuration and execution:
 
 
-![alt_text](../images/image8.png "image_tooltip")
+![](https://lh4.googleusercontent.com/ebmAhMptNu7OpRFznpGxTQkp45SBwP-4PRjjOk13SgG23HDqxKqVqkNgs3SN0u5y43YrugY-NkTyjBDpNUMPAJaxR5_0go6hUFf4kt0-nXwXJOFL5mxndr8pDn1DXpOVdA)
 
 
 14.- We're in. Using the[ Meterpreter](https://www.offensive-security.com/metasploit-unleashed/about-meterpreter/) session, the next step is the identification of the operating system and its version.
 
 
-![alt_text](../images/image9.png "image_tooltip")
+![](https://lh3.googleusercontent.com/oJep-1frnkYPfd9i2gAzBxtngPfZtVbmZvqJSFvQLs9nUttf4DpbKDaHn91sdbFGgTZJ2mpPUaHEy56U1Y-npxjqQu49hEug8rVOU5uzoysqoABCU_9_VFWB5bKKsYbVWQ)
 
 
 15.- Is there an exploit that allows us to escalate privileges on that operating system?
 
 
-![alt_text](../images/image10.png "image_tooltip")
+![](https://lh3.googleusercontent.com/6oAd3VrPi4WCJECRsdFsXzfd58hw-YvW-mY64R8Odas9Kl50plcPM9mB_l5kBxCSsGiKu_VuO2uKv_1LScHaGgvJcHlF5zeIa2yaVFAD5SZptUrBeQ9kelCnoudSAxVE7Q)
 
 
 16.- Yes, there is. But you need to run that exploit inside the target machine.Download the exploit and make it available on a server.
 
 
-![alt_text](../images/image11.png "image_tooltip")
+![](https://lh6.googleusercontent.com/uYHpxRjh1TxVVk2hUdGikBVJQqoCN71LuURNj5IHfdIuyAg776f-Pbpw0pBFpMcU5fe8QCDFbY9pmCen6a4Zq-CMHixIGZSIzrZgTH3K3uBmrbckaxJzVerRd0Y13H-8mA)
 
 
 17.- Use wget to download the exploit inside the target machine.
 
 
-![alt_text](../images/image12.png "image_tooltip")
+![](https://lh5.googleusercontent.com/e8dsdKDaM9c-pbNsltU6YEkTC1b40L-TQ3FsL2FJyYMKBak2LM_X5UhZHUQ_PLhZUSNL6WsivZN45yp25x4ikrVKRwliARhJ8bAd4a-V42736E8iG2-0qvlhDe4-wzBazA)
 
 
 18.- Compile and execute the exploit.
 
 
-![alt_text](../images/image13.png "image_tooltip")
+![](https://lh4.googleusercontent.com/L9rI0gff87cC2lPDHNZMUkpc2CJ1S0FCjsOOlv2PU_HLcXMQKFbxI6s-xoq3OJvuHGQ3DFIQ6MeMjHG0VFAn18D6oJ9M9ASbeesgzbwjYeqaS5onV48rMqxMKQhBo7-LKQ)
 
 
 
@@ -339,7 +334,7 @@ dirb http://192.168.56.102
 19.- The flag is in the /root directory. Read it and write the content in a report.
 
 
-![alt_text](../images/image14.png "image_tooltip")
+![](https://lh4.googleusercontent.com/Vv8-an3qqumPC7hl4aOkH1PloUBeEac9aTwU5nhCkVM5iT6oa2MqcPtQIRtsVf5Jdcb-gHljp0g6bHwp4CTtFOv1JaSIqBkYLVNmAi824EB6DHEw1MUmWKinkV89WqeMUg)
 
 
 
@@ -351,11 +346,11 @@ dirb http://192.168.56.102
 1.- First of all, identify the IP address of the new MV using[ netdiscover](https://kalilinuxtutorials.com/netdiscover-scan-live-hosts-network/).
 
 
-![alt_text](../images/image15.png "image_tooltip")
+![](https://lh6.googleusercontent.com/nhPAkKBd7gcLHZ4YWzfEFxC3GJOa_MlFKOfPqtilKMPM1ryGOEHPqO3xQpM58WVJwf6tNqRBgonHeV3MUT-jXDuJMnI9mjSKwZdUHhbJmLWo59ZIeyKfXibPB62lVvMfaw)
 
 
 
-![alt_text](../images/image16.png "image_tooltip")
+![](https://lh4.googleusercontent.com/rCJRGJnVlw-OBa4yf7Qy4yRFGFoBiXjHlORyuwpZss9cKO3RLRwGoNswCnYoHwIrqCoqDPhx6MoN4G_PDxMVQCoVYdDKOJd7mSiH_-IfnbjeGP_uXHkmIzeKZ18GJZoABXOFmOrN)
 
 
 Our target IP is **192.168.56.111**
@@ -363,11 +358,11 @@ Our target IP is **192.168.56.111**
 2.- Having the IP address, use Nmap to identify the services and some vulnerabilities installed in the MV.
 
 
-![alt_text](../images/image17.png "image_tooltip")
+![](https://lh6.googleusercontent.com/hS6ddDSH9FLYQrPCkVvZBCWXUGs90A8_Vzueqv9H5vJYiv8MNL3ughBWm6z-ERGhEt1HBYy33LVfAoN24yDFrCDjOoVCtvKY1GPrVSXeT36qDiMMOwo5FDmtkNz7B_3Lq3JPXBXL)
 
 
 
-![alt_text](../images/image18.png "image_tooltip")
+![](https://lh3.googleusercontent.com/Jq6o2wKTOgQdjK-45R8o6UzeV3lNo4uvMP8VVUHTf4Iv73rVEZ17IclYRNUxnGf2qEVtVxJ3Y_V5qem9gIlv6Q975ZgqZw4MtzVUVUue_NgEP12hddK0v42mtZtvenATiw)
 
 
 We don’t have any interesting vulnerability available out there to gain root permissions. So let’s try to attack the available services.
@@ -380,7 +375,7 @@ Let’s try to attack the port 80 where is running a **Apache 2.2.23**.
 Let’s investigate about some metadata:
 
 
-![alt_text](../images/image19.png "image_tooltip")
+![](https://lh4.googleusercontent.com/_apgFI0V3wPHBgQTn9PVH3_m3rEcl7i78d3db0l2UPznZBRzJaLJrO6wje32MFSdlWM4IrXEZh2a4T-tGwYBihl8CmRfzqW9b3JHAc5UcMtEf3hHoILSZfxNsqOudCZa9g)
 
 
 We found an interesting service called pChart 2.1.3 with the following path **pChart2.1.3/index.php **
@@ -388,7 +383,7 @@ We found an interesting service called pChart 2.1.3 with the following path **pC
 Let’s do a searchsploit of this service:
 
 
-![alt_text](../images/image20.png "image_tooltip")
+![](https://lh4.googleusercontent.com/Qvy42gTDwBG8l9ICqQaKdf8vFpyXMruhK5vNOp6NNs5aocjXWyopxsCEIRsyjPFeYLJ6WGR7rdLQSswP8eADB5ytsB9RzE4EAl0gWF40Y4d-pdJh7JPdiWPA9cabQSwSYg)
 
 
 Reading the exploit with:
@@ -396,23 +391,6 @@ Reading the exploit with:
 ```shell
 cat /usr/share/exploitdb/exploits/php/webapps/31173.txt_
 
-# Exploit Title: pChart 2.1.3 Directory Traversal and Reflected XSS
-
-# Date: 2014-01-24
-
-# Exploit Author: Balazs Makany
-
-# Vendor Homepage: www.pchart.net
-
-# Software Link: www.pchart.net/download
-
-# Google Dork: intitle:"pChart 2.x - examples" intext:"2.1.3"
-
-# Version: 2.1.3
-
-# Tested on: N/A (Web Application. Tested on FreeBSD and Apache)
-
-# CVE : N/A
 
 [0] Summary:
 
@@ -443,52 +421,6 @@ sensitive file disclosure (passwd, siteconf.inc.php or similar),
 access to source codes, hardcoded passwords or other high impact
 
 consequences, depending on the web server's configuration.
-
-This problem may exists in the production code if the example code was
-
-copied into the production environment.
-
-Directory Traversal remediation:
-
-1) Update to the latest version of the software.
-
-2) Remove public access to the examples folder where applicable.
-
-3) Use a Web Application Firewall or similar technology to filter
-
-malicious input attempts.
-
-[2] Cross-Site Scripting (XSS):
-
-"hxxp://localhost/examples/sandbox/script/session.php?&lt;script>alert('XSS')&lt;/script>
-
-This file uses multiple variables throughout the session, and most of
-
-them are vulnerable to XSS attacks. Certain parameters are persistent
-
-throughout the session and therefore persists until the user session
-
-is active. The parameters are unfiltered.
-
-Cross-Site Scripting remediation:
-
-1) Update to the latest version of the software.
-
-2) Remove public access to the examples folder where applicable.
-
-3) Use a Web Application Firewall or similar technology to filter
-
-malicious input attempts.
-
-[3] Disclosure timeline:
-
-2014 January 16 - Vulnerability confirmed, vendor contacted
-
-2014 January 17 - Vendor replied, responsible disclosure was orchestrated
-
-2014 January 24 - Vendor was inquired about progress, vendor replied
-
-and noted that the official patch is released.
 ```
 
 
@@ -496,18 +428,16 @@ Let’s try the Directory Transversal, and we obtain the following:
 
 Directory transversal is:
 
-_a web security vulnerability that allows an attacker to read arbitrary files on the server_
-
-[https://portswigger.net/web-security/file-path-traversal](https://portswigger.net/web-security/file-path-traversal)
+_a web security vulnerability that allows an attacker to read arbitrary files on the server_ [6]
 
 
-![alt_text](../images/image21.png "image_tooltip")
+![](https://lh6.googleusercontent.com/-HbnQadd8HgOwxt-IcOlg24euOVMBs07JJ4E-1_Ei2iwqNJhUrjx0pulEzS2HeAuQ4U8-QcFkGj9pUWPUJgG_seL1PUl_rOTm14K2a0IL4AKXvnomSHPrkhHpDCKc5IGew)
 
 
 Knowing this, we can easily obtain the flag by going to /root/flag.txt directory:
 
 
-![alt_text](../images/image22.png "image_tooltip")
+![](https://lh3.googleusercontent.com/Nj38kD6nhpr5bHQqYtGthj-d_Vt8bJVi01VSotaIHESRZIMy4tsNUOcdSehDH79hdXUrLs77c1ja82Z4Z18dgkUDcx8vGPYGWmqzyWuWdTDM-ZW4WIJ8x6ENHAzpji6xAw)
 
 
 
@@ -516,26 +446,24 @@ Knowing this, we can easily obtain the flag by going to /root/flag.txt directory
 We have been able to get to the server’s files. Now let’s see the source code of the main page and we can see the Apache configuration file location:
 
 
-![alt_text](../images/image23.png "image_tooltip")
+![](https://lh4.googleusercontent.com/pIT6z3z1CgURvzm0fmF4sn7mmcZZF357rYvaFe9lPHglBtozsCTOutDPW4WVjk7HcyF_Tu5ba8YsDpOlqubUcGmGsRWJ4xUrtxl5XOX7BlNKQbt_MU4A7_2lmdpX3rQGGw)
 
 
 Let’s obtain the Apache configuration file by applying the Directory Transversal:
 
 
-![alt_text](../images/image24.png "image_tooltip")
+![](https://lh6.googleusercontent.com/Jmb6BBHgO4cQgn8SP8q1HHgYZLlgkVYFV4xTD5JAlnAxERTAcuxrBqpHZFs7Br_RvkLI-pCip742hW5nLURN-SAcRUTnlYm-kWNMvPIIMUoovFBC6oP6ivjVjdb73CBdiA)
 
 
 Let’s skip the initial default configuration useless text and focus on the last part of the file where the new configuration (juicy & interesting) is set:
 
 
-![alt_text](../images/image25.png "image_tooltip")
+![](https://lh6.googleusercontent.com/LJLRzfVyJrS3sjLofurvT9QaShpjkTBPFZrWfbsSAxpWY1_YsO5NOK4XP1bRU9a4ZK9laHfsG6NsDuZXBBW1abMIF33p28CSJS96cQw6Z-s-4qEPAqoA9F-n-G8gFrcIgQ)
 
 
 We can see that it uses Mozilla/4.0 user-agent in the port 8080.
 
-By definition, “_The User-Agent request header is a character string that lets servers and network peers identify the application, operating system, vendor, and/or version of the requesting user agent”_
-
-[https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) 
+By definition, “_The User-Agent request header is a character string that lets servers and network peers identify the application, operating system, vendor, and/or version of the requesting user agent”_ [7]
 
 Let’s investigate further. We can try to obtain the User agent info by passing the custom header to the server and see what it returns
 
@@ -545,13 +473,13 @@ curl -H "User-Agent:Mozilla/4.0" http://192.168.56.111:8080
 
 
 
-![alt_text](../images/image26.png "image_tooltip")
+![](https://lh6.googleusercontent.com/xvSezkPuofqiZofXnjbGYpW_-HlgNV43NchMgw0Zs8gjpsO9EPDQ_5vVQccfDwA1hHhl9Gi9Es-brfokYyxpRCiMOjG6Zd8QouoMBAvutHv0TMZbGkIxSJIcSS9mRaEJ_w)
 
 
 We see an interesting service name called phptax. let’s see whether there is an exploit for this or not.
 
 
-![alt_text](../images/image27.png "image_tooltip")
+![](https://lh5.googleusercontent.com/a7tPmc621mAoFY8X9eRA2e78lLbQ_BUPGkgVNpJxtTHeBb8zjzTkSqRuf7rmcCPVjT9GvUSCmswE-7SyBo0Wbjrqu1JAot79hEG5kvgNOYtfVd9XlFE1fLzzizVhYarElw)
 
 
 **DISCLAIMER: from now on, the target IP has changed to 10.0.2.5**
@@ -559,13 +487,13 @@ We see an interesting service name called phptax. let’s see whether there is a
 Let’s open MSF and use the first exploit from above:
 
 
-![alt_text](../images/image28.png "image_tooltip")
+![](https://lh5.googleusercontent.com/jJe7HZAnNc6mgmrfEv9haO_eZcTJXxu8wvet2jH9Xl4jy4fK-YLyM_OEdDsLugH54Qny8HgjKTp-3G6NyIgOwZq6-QYOrd_PLTOrdzsL_t3X4yCaN9mn9afsR9nhB2KhIw)
 
 
 We have seen that it is using FreeBSD. We can use this to escalage privileges.
 
 
-![alt_text](../images/image29.png "image_tooltip")
+![](https://lh5.googleusercontent.com/T_xA0PSzblz_ppOMKK71SQzUI4i0SNSQjuW5eGbim6J3LNFtfwwexTlpzEQv1to89_y_mSzL3u-qhylDcoNBKMztQ0Iwq1eJW6mCxOp4XqU04c4v1kySiaz9qbsTFlbnRw)
 
 
 We download the 28718 exploit and we will pass it through netcat to our target machine:
@@ -573,25 +501,25 @@ We download the 28718 exploit and we will pass it through netcat to our target m
 **Local Machine**
 
 
-![alt_text](../images/image30.png "image_tooltip")
+![](https://lh6.googleusercontent.com/8Ed5ceeGQ1Rvg9GmrYX3WvaqagNWjBmT0tcUaysdHt_Xf9NtvQzLKLHfmiACC55V5NTqCG3SbXNbQaSpuOpDekf2aOJs3Cl3Q4lvB5MVfJFKevF1jXHaM4y7j2n7YjpMWQ)
 
 
 **Target Machine**
 
 
-![alt_text](../images/image31.png "image_tooltip")
+![](https://lh5.googleusercontent.com/TJoZnKQRaMcprxRS9xkPXbLNzDYZsMlg9kc3AKY-jnWkSB7Fdtq_jjCRVSdLyemTUkt4ggXhoTlL91POT7Kd7TLh1IygvYwQT3TQ7iFs1WD29ts4sxIlXoYhZmMVmf0mfw)
 
 
 Once we got our file, we restart the shell and we ensure we have the file:
 
 
-![alt_text](../images/image32.png "image_tooltip")
+![](https://lh6.googleusercontent.com/Pv38NEy0P0QtBNXWjrEXBfIzyAzgaTacTqxSA59vxHnfufDoe4T3JnlGnQKDAoGA6cwx2aJh4Bk0Io9_7dRmG4c1XAXGur7uxeIhHDlX1DsAsKOf20YtO18AdEtnzmeU2Q)
 
 
 Let’s compile it and exploit it.
 
 
-![alt_text](../images/image33.png "image_tooltip")
+![](https://lh3.googleusercontent.com/RQ5ZQbNimnAFo30kdo2_05QaE4lzS9l3eWwFc2FxmQ6z2bsRfjTyqOC_NOLK1mcIryuRhpKdSyA86c_EHKgRLPxbh4AGHiNmKZVVw7_bYR5fnoTsRi8V4z6S0NFEphofKw)
 
 
 Now we are root!
@@ -607,11 +535,11 @@ Now we are root!
 1.- First of all, identify the IP address of the new MV using[ netdiscover](https://kalilinuxtutorials.com/netdiscover-scan-live-hosts-network/).
 
 
-![alt_text](../images/image34.png "image_tooltip")
+![](https://lh6.googleusercontent.com/nhPAkKBd7gcLHZ4YWzfEFxC3GJOa_MlFKOfPqtilKMPM1ryGOEHPqO3xQpM58WVJwf6tNqRBgonHeV3MUT-jXDuJMnI9mjSKwZdUHhbJmLWo59ZIeyKfXibPB62lVvMfaw)
 
 
 
-![alt_text](../images/image35.png "image_tooltip")
+![](https://lh5.googleusercontent.com/qSJ-ihnHk3fq0LF8AgElMJv7P3pUgbm9XCV2uqJ3YMKe45Aq1ub8ydcpADZ7fZdTQFMxcnz6m8LIMgcwFa0JTiwG2zbDdtaE8fbTDeWRX5rLkGivb_2VHG4tE5Piunl1pQ)
 
 
 Our target IP is **192.168.56.112**
@@ -619,11 +547,11 @@ Our target IP is **192.168.56.112**
 2.- Having the IP address, use Nmap to identify the services and some vulnerabilities installed in the MV.
 
 
-![alt_text](../images/image36.png "image_tooltip")
+![](https://lh6.googleusercontent.com/QPKVbjHIHx4LepirWvipL1D9__K-7B17mEIyI_H1iW73tI_4JRJbY__HKFqYzqaHwn8ecfppblD6RAqh7iIKtHWgbtaOAC03DueIqYeBNJ3YlSO6hNk9Mp6yQGJzAk5LLQ)
 
 
 
-![alt_text](../images/image37.png "image_tooltip")
+![](https://lh6.googleusercontent.com/7AaAVbyyzS1xj_He0Fcbjvl0lCdzl8mkccerd3JYq-65QCM_tI9h_L8r1cZ9E5eukZtIEC_B1MkdRQ0LahkCrKeA2I--t4XfAnBfzvt0zUwPe3OvpIyC8ydBqG8iqAwg0Q)
 
 
 We don’t have any interesting vulnerability available out there to gain root permissions. So let’s try to attack the available services.
@@ -634,7 +562,7 @@ We don’t have any interesting vulnerability available out there to gain root p
 We have seen some interesting directories such as **/admin_area**
 
 
-![alt_text](../images/image38.png "image_tooltip")
+![](https://lh6.googleusercontent.com/vD80t9GgQ_tDA7SiJld8vJ0PTajJh8DkfzKTzGRjW1nErYzUIDD4JeM1XUIx3IRiWjaMjsqsLOgnUrO9C2gdjtVM1S4LYBH-FLuTd6PJaixHocFpHpXVnMnPUShtvdWdEQ)
 
 
 We get the following password:
@@ -644,7 +572,7 @@ We get the following password:
 We search for this hash in Google and we found this:
 
 
-![alt_text](../images/image39.png "image_tooltip")
+![](https://lh5.googleusercontent.com/Zy7_Ccfb1C7iLvlgqSDk7RNfoPFIjpP31-F1scbuQVFJNYHLHJWQjJz4hPgopNsrh-36KwyLsx5jPbJPcHYmPNfNqy2QGn0ig9LUkyZQDbuygAXC1rVodL3anoDDYYZkEQ)
 
 
 Now we try to enter into the login page:
@@ -654,19 +582,19 @@ user: admin
 pass: Master
 
 
-![alt_text](../images/image40.png "image_tooltip")
+![](https://lh5.googleusercontent.com/-WbacawyXfPR86ph0DMAXqaI12eBeuNYHOwU_bRPuTUKQkkK76O2sl7PkvCE2RxPDR2S9vR2HeWfytWiyho3EE7f46XvDfMrfSZO43G-tIjo3taqt9wRu6tLfFH6D9jiJQVakPH_)
 
 
 We did it!
 
 
-![alt_text](../images/image41.png "image_tooltip")
+![](https://lh5.googleusercontent.com/LESQjpTQqfdaQhb5WjOENeq5dcQK-boslCIPB5o-2AAwUXNzcl_h5XxXIfDQNskJOMurfn1Zwv-IZwgtpoiJPbM9SdvRZlpW9bzCQ2gK5uFQZN907bV6CgtUuhygTXpmpEKtT5d-)
 
 
 We don’t have much more info, let’s try to get more juicy directories once we have the login credentials, using **dirbuster**:
 
 
-![alt_text](../images/image42.png "image_tooltip")
+![](https://lh5.googleusercontent.com/nVx-IRiyQyM6hPb-Nrw6AoLHdBAPqjUgCTnUDNj9FAsOtgXmi9TUwFSiFmsB_6UXM8y99B8kMZFhU0YR_nlmTVj2pK_l0cqVx-_kEPDjU_Yt2u-KClkCmD-m0IptxZHrMg)
 
 
 No more juicy directories we found…
@@ -676,17 +604,17 @@ Let’s try to upload random files to the server to see how if performs.
 I will upload a sample.jpg image and check the path
 
 ```shell
-/uploaded_files/&lt;filename>. 
+/uploaded_files/filename 
 ```
 
 We know this by checking the robots.txt page (obtained with nMap) that htis directory exists.
 
 
-![alt_text](../images/image43.png "image_tooltip")
+![](https://lh6.googleusercontent.com/nqOZvp0Yy-MJI9IJZ3Bt1o5TABLrN4VzgBb5WRzfOydJijEGGWbWCJYYSjJU88zO10BThM59No_T3_rVEuBo_Zb9vXVC19rTmxiqQOzeyYjCXVQKjyj-FlnaMC1G1DrllIxoOLm3)
 
 
 
-![alt_text](../images/image44.png "image_tooltip")
+![](https://lh6.googleusercontent.com/_1z4y6VSGXdjq-g3eklqPacG6YyaHF3d9b_qU_zzXWLaIia0owRQyBOdCXqfbmtc4KNU88_VnRXlSwSNvLP4PWvgKKIED0PYibxw8IBboJwt69laNtkxG02AHsQttzkDR4JKLCfG)
 
 
 We have managed to upload a new image.
@@ -694,7 +622,7 @@ We have managed to upload a new image.
 I’ll try to upload a php file to see if we are able to execute remote code: I will upload a simple hello world php file:
 
 
-![alt_text](../images/image45.png "image_tooltip")
+![](https://lh5.googleusercontent.com/IY9ngqU9R_8YPGDoVKI_Vq8b-nn2crPE4cCvqt_yDAOKv2DKQpx0i-ZUi0vo-xNElZf2XgJackLksfBgZdSLuApVl1rWK5ZkWjSiTb7o-V0kOBgCWomA1apn24GLK2pnY3e6tfX6)
 
 
 We have seen that we are able to execute remote code in the server. Let’s upload a **webshell.php** file with a backdoor to execute arbitrary code:
@@ -728,25 +656,25 @@ if (isset($_REQUEST["cmd"])) {
 Exploring the directory of the web page we find the file hint.txt that can give us some clue:
 
 
-![alt_text](../images/image46.png "image_tooltip")
+![](https://lh4.googleusercontent.com/xjd1EV-TFrFcdPSCPvjBs3zvarCv5Zs4n48EA_7Yd6_sIR10IBYRalT89LW0p_uP4_whoif7UzIn0t0oQ92ZVwS0LY0XwF-3I9ICqBu3Wi6q3sF1n3CY00LMc-yVei_c56J5V0D3)
 
 
 hint.txt:
 
 
-![alt_text](../images/image47.png "image_tooltip")
+![](https://lh6.googleusercontent.com/Dgja1vPA66Yh0RSswUSeFwobA5vpJcfLM6cfk4V44qhd_kV3RT9utExnb7nLOwUkJeVV1GuyAFohliDfPJikGJgzQXTCD2GFD4q0Cz6YSZVRyotbygdt5SUdMVnkuyLFw31vDxeb)
 
 
 Let’s explore the technawi user’s files:
 
 
-![alt_text](../images/image48.png "image_tooltip")
+![](https://lh4.googleusercontent.com/v0a6pZxl1fUYJYmqA5x4qL-JepXS67yCmXhK6LJiCk6dV3fCdr_RxPcgatQfuCEthc1cyMUc7HZo-kGJJ7P90IFlmoT769rqXx1qfJAEri75SowILQ3hhsW94jnon7o_yX1QgwBL)
 
 
 Let’s try this credentials to access via ssh:
 
 
-![alt_text](../images/image49.png "image_tooltip")
+![](https://lh4.googleusercontent.com/5mPhhhtIqpzycyeS-uJijYKfnzSl3_36harSyWZNgnELSBeI6OqhdiZZfAOS9-4R56ZcxYwJzs_DmdikR-knaCr_1znrBslp-WD9AVh4QxNBZ9IxoC2J4V19hmBO_TkNm_oUfcEm)
 
 
 
@@ -755,7 +683,7 @@ Let’s try this credentials to access via ssh:
 As technawi is already in sudoers file, it’s very easy to become root as like this:
 
 
-![alt_text](../images/image50.png "image_tooltip")
+![](https://lh6.googleusercontent.com/DiJUKYUff-T-cltokfZU80CphAYaJUUBrsQfiU_yIjUGsilWw93WNFtfcvC0EDYA2Nk9HkozY1RJeMZxcoRZDqmoPrqHB7gm6NgA5B6ni7UQ624mFBB5nyUX75qNthHBhSdzvRBE)
 
 
 
@@ -765,29 +693,29 @@ As technawi is already in sudoers file, it’s very easy to become root as like 
 ## Information Gathering
 
 
-![alt_text](../images/image51.png "image_tooltip")
+![](https://lh3.googleusercontent.com/FAb_CnIxI5KpAn2A7FCeB2F1dD1AJqfNvnMxcswf2ZcCVw1oKhK25RgSn11EVI0Q1CzSDEHSh73mn1b5X2kSPU1Eg3q7leyL5YGJ5IAt5pJzcZaDsFEDRJUJyCVzcjGVCEvVjAsu)
 
 
 
-![alt_text](../images/image52.png "image_tooltip")
+![](https://lh6.googleusercontent.com/n4P5CxdmWCxqGc5WfKmL4z_YW0v7Yl3S6Op0G8_aLIeGwzETCftDTTgBVaWCTvAMalWzAM0Wf0BryN820KJXkYeBBMLL1h2OSbw0caCuigQgA00qDoBR3lQC5GNj9dM6Y67Vutid)
 
 
 The FTP can be accessed anonymously. Interesting. Let’s enter into it:
 
 
-![alt_text](../images/image53.png "image_tooltip")
+![](https://lh3.googleusercontent.com/lCFG0POpSEb-ZhP_qvGpWIDAlSWkh5RFnScEPACZBW3PllxRB41HsD5E6K1hJdoUgE163L2bPXSwyi0lY5ivQyxAcYDxBfa3WSUEtwqTWwcBPmarxcwm7cflYr85KnTOBsOrZI6B)
 
 
 We have found a users.txt.bk file, let’s open it up:
 
 
-![alt_text](../images/image54.png "image_tooltip")
+![](https://lh5.googleusercontent.com/7gOLUy3nPZC319hW8Mc1JdzJLgEFhWkVGxLM33f6Li27d4r_InqMQn7Ou95H85Sa0ubk8SL7MqKxCSzNEyALkGMvZnrkS2kKxzvOEt7xgF3QCu_TrmrGWnzOQ3LxhlISP09-18e8)
 
 
 Interesting list of users. Let’s see if each one of this users have ssh auth by password:
 
 
-![alt_text](../images/image55.png "image_tooltip")
+![](https://lh3.googleusercontent.com/r41YkEgNGUtkCK7Zj3ZU71zxwVZicOgBDqZCn33SSCfAdB4-hLa6morllZR4yeFIjRaRqskhdS7sisiUPfY6OMRaPeKzMTgLgZbRjQRSAhIVGcenQHjyMjDpRL3Qni-sC3CFAEmC)
 
 
 
@@ -798,7 +726,7 @@ All users except mai and john can be accessed through ssh. At the moment we don�
 In our Nmap scan we have seen that there is a URI called /backup_wordpress/, where it is actually a wordpress:
 
 
-![alt_text](../images/image56.png "image_tooltip")
+![](https://lh3.googleusercontent.com/AW9d2d5pcR-ipLVC7RPctF9zNWGAh3EDY28Z7d9fcIEMrAeb_AjqSRKy2SePMHzMdwcZo1n6qC4OD6m701RqFeCgEGzxTxlrIEoC46gngl3DzV43ZJOnSLpEmiS75TNsuLlGlhaU)
 
 
 **DISCLAIMER: from now on, the target IP has changed to 10.0.2.9**
@@ -811,31 +739,31 @@ sudo wpscan --url http://10.0.2.9/backup_wordpress -P /usr/share/wordlists/rocky
 
 
 
-![alt_text](../images/image57.png "image_tooltip")
+![](https://lh3.googleusercontent.com/wDdcVSUnMGYxEyOKPtBoD58T3ekqLunV1r9DRa6SmktvtijEU5hfl8aNM97cvPb9geaJcNAl2LrANrqxsrHU1XxGPj_MYWsAPnxuw3gXH7CWDTdwWhYMaZuFI81DONiD1_fazfSx)
 
 
 We reach the WP Admin page!!
 
 
-![alt_text](../images/image58.png "image_tooltip")
+![](https://lh4.googleusercontent.com/Ombc8oh2q2RStlvtRNKFstO18Okq0DqjXcbpdIs95-OctTGuIfTsrNFo2XiJt23qeD_S3mzNGx7__J3fD5VGhoJVsVFJWQYuYaMV4k5fN5eQ1hBLdf5jWfQqYV5QAwzkZN6NKfyB)
 
 
 Now we will go to Appearance -> Editor and we will edit the 404.php page so we can add a php reverse shell script into it:
 
 
-![alt_text](../images/image59.png "image_tooltip")
+![](https://lh5.googleusercontent.com/OpRep0VA_kStoiqmsTBofjKLM0lO0v-fdO-ygntjpqnJyMr9jyeNcCGS1L1kPNT6QNaX5EUI6_EKyYvzsdC7U2wHbiN3FF4riVxg_wyp0W1ande9kT579oUL6TUaWRR60OWFz2X0)
 
 
 Now we navigate to this page (wp-content/themes/twentysixteen/404.php) and we have our reverse shell!
 
 
-![alt_text](../images/image60.png "image_tooltip")
+![](https://lh3.googleusercontent.com/h8yEZZO1qXrRvxFIcySxD7Fw5KRg6glJe2cCDhJwNNH0JnfAoM1POJmRsh7htqBbMOD17_BlBuuj8k4I_ZxpytPZHe_RcFtgREZby1ZtdkeR26XJ22agtCqnSvi6VYWR92hBrGpL)
 
 
 Let’s see what system is running:
 
 
-![alt_text](../images/image61.png "image_tooltip")
+![](https://lh4.googleusercontent.com/zbvyjBefX75LIfhH4QkDzgK1xZlAiaEoD1sM8zsigt1-jpLppQwGhYE1FeLlyCkRsKJKUBklDUb9p-SBuZD7OnRv2HNoPlhE8bE_lz5nYzsQ5YjqYQYJdUeROMB8HlaMpOrUgM8S)
 
 
 We don’t have a exploit available for `Ubuntu 12.04.4` & `linux kernel 3.11.0-15-generic`. So we will try to find another way.
@@ -843,13 +771,13 @@ We don’t have a exploit available for `Ubuntu 12.04.4` & `linux kernel 3.11.0-
 Let’s check the users that are in the system, and see whether they have ssh access or not.
 
 
-![alt_text](../images/image62.png "image_tooltip")
+![](https://lh5.googleusercontent.com/S0kTWZVr7_Xi4yS1ZXdacAZZs3OrBOKr8gawOXDCneLMDKarDINMA05qjVIbypylRunNY4C1rYu1J89iAvHUpamse0rXFUAiP6aIVQOgPlYo_VcZqW5xDsEqe5ZJBxCRUIylxrhp)
 
 
 We already know that john & mai require a public key to access through ssh, so let’s try with the rest:
 
 
-![alt_text](../images/image63.png "image_tooltip")
+![](https://lh3.googleusercontent.com/kz6U12Fz_4qJNJHrzczIGt0po29Ud14q2hzPYpE_EYTGDucAkdcmeBcew3ldDELkjnb3TFE3SVBlYR31DJldNmS3iJvoOdYynu5s8vfYS7iCCl1t1KU5mAx5nGf3Cm4q8keueXP-)
 
 
 OK so we can only access with the user anne. Let’s brute force her with:
@@ -858,11 +786,11 @@ OK so we can only access with the user anne. Let’s brute force her with:
 hydra -l anne -P /usr/share/wordlists/10k-most-common.txt 10.0.2.9 -V ssh
 ```
 
-![alt_text](../images/image64.png "image_tooltip")
+![](https://lh6.googleusercontent.com/gy8qRedDFdyWE8R1NgXR_PrxacdtMiM6bvTLQ0O8cTIAVnnpuJqSAtZD9BKR-_qoRxPjBvWTlhPfHk_O8U0wyu0xjZUpnRnkqrTuhUNSjtmV2UfYKp_k8vdX5Alx1nqwD6oZLsnC)
 
 
 
-![alt_text](../images/image65.png "image_tooltip")
+![](https://lh6.googleusercontent.com/L9DlmxGP-wP0xaqmaSV_32pRQ50wDttjkPjHjBRWVaK9qmf12SY6_iF8x_T83X1SMycHXUf0bMeeCoep4es7Ne2Q4CWab-LICJD9DU8WQzmNtjG7QICidstCPLbz6VERknArmrC5)
 
 
 We got the flag!
@@ -873,8 +801,18 @@ As anne is already part of sudoers, we do have root privileges.
 
 
 # Bibliography
-- OSSTMM https://ciberseguridad.com/guias/desarrollo-seguro/osstmm/
-- ISSAF http://insecuredata.blogspot.com/2009/04/metodologia-de-test-de-intrusion-issaf.html
-- OWASP https://blog.pleets.org/article/conoce-owasp
-- PTES http://www.reydes.com/d/?q=Metodologias_Existentes
-- NSIT https://henryraul.wordpress.com/2017/05/10/metodologia-de-pruebas-de-intrusion-en-la-nist-sp-800-115/ 
+
+
+[[1]	‘¿Qué es OSSTMM? Definición, historia y características’, Ciberseguridad. https://ciberseguridad.com/guias/desarrollo-seguro/osstmm/ (accessed Mar. 14, 2022).](https://www.zotero.org/google-docs/?dJwW8p)
+
+[[2]	I. Araoz, ‘Seguridad Informática: Metodología de test de intrusión ISSAF’, Seguridad Informática, Apr. 14, 2009. http://insecuredata.blogspot.com/2009/04/metodologia-de-test-de-intrusion-issaf.html (accessed Mar. 14, 2022).](https://www.zotero.org/google-docs/?dJwW8p)
+
+[[3]	‘Qué es OWASP y por qué todo desarrollador debería conocerlo’. https://blog.pleets.org/article/conoce-owasp (accessed Mar. 14, 2022).](https://www.zotero.org/google-docs/?dJwW8p)
+
+[[4]	‘Metodologías Existentes | Alonso Caballero / ReYDeS’. http://www.reydes.com/d/?q=Metodologias_Existentes (accessed Mar. 14, 2022).](https://www.zotero.org/google-docs/?dJwW8p)
+
+[[5]	‘Metodología de Pruebas de Intrusión en la NIST SP 800-115’, Behique Digital, May 10, 2017. https://henryraul.wordpress.com/2017/05/10/metodologia-de-pruebas-de-intrusion-en-la-nist-sp-800-115/ (accessed Mar. 14, 2022).](https://www.zotero.org/google-docs/?dJwW8p)
+
+[[6]	‘What is directory traversal, and how to prevent it? | Web Security Academy’. https://portswigger.net/web-security/file-path-traversal (accessed Mar. 14, 2022).](https://www.zotero.org/google-docs/?dJwW8p)
+
+[[7]	‘User-Agent - HTTP | MDN’. https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent (accessed Mar. 14, 2022).](https://www.zotero.org/google-docs/?dJwW8p)
