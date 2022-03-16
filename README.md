@@ -41,23 +41,24 @@ This penetration testing report must be completely filled out by the student, an
 # Methodologies analysis
 These are the five most commonly used methodologies out there:
 
+
 ## OSSTMM
-OSSTMM (Open Source Security Testing Methodology Manual) provides a methodology for a comprehensive safety test, referred to in this document as an OSSTMM audit. An OSSTMM audit is an accurate measurement of safety at the operational level, which avoids assumptions and anecdotal evidence. [1]
+The OSSTMM (Open Source Security Testing Methodology Manual) includes the methodology for conducting a complete security test, which is referred to as an OSSTMM audit in this text. An OSSTMM inspection is a precise measurement of operational safety that eliminates misconceptions and circumstantial information. [1]
 
-As a methodology, it is designed to be consistent and repeatable. As an open source project, it allows any security testing professional to contribute ideas for more accurate, concrete and efficient security testing. It also allows for the free dissemination of information and intellectual property.
+It is intended to be accurate and reproducible as a process. It enables any vulnerability scanning expert to submit suggestions for more accurate, concrete, and fast security testing because it is an open source project. It also permits the free exchange of communication and copyrights.
 
-Environments are significantly more complex compared to previous years due to events such as remote operations, virtualization, cloud computing. And also other new types of infrastructure cannot think of performing simple tests only for desktops, servers or routing equipment.
+Because to developments like remote operations, virtualization, and cloud computing, environments are substantially more complicated than in prior years. Simple testing for PCs, servers, and routing equipment are not feasible in other new forms of infrastructure.
 
-- Therefore, OSSTMM test version 3 covers all human, physical, wireless, telecom and data network channels.
-- This also makes it perfectly comfortable for testing cloud computing, virtual infrastructure, messaging middleware, infrastructure and mobile communications.
-- And also, high-security locations, human resources, trusted computing and any logical process that covers all channels and requires a different type of security testing.
-- A set of attack surface metrics, called ravs, provides a powerful and highly flexible tool that provides a graphical representation of state and shows state changes over time.
-- This integrates well with a "dashboard" that is beneficial for internal management and staff. And also external testing, which allows comparison/combination of the two.
-- It can perform quantitative risk management of the report with OSSTMM audit findings, providing an improved result due to a free and more accurate results error.
+- As a result, version 3 of the OSSTMM test includes all people, geographical, wireless, telecom, and network service channels.
+- This makes it ideal for cloud computing, systems will enable, messaging middleware, infrastructure, and mobile communications testing.
+- Also included are high-security sites, human resources, trusted computing, and any logical process that spans all channels and necessitates a distinct form of security assessment.
+- A set of threat measures known as ravs provides a robust and extremely customizable tool that illustrates state evolves over time and gives a graphical depiction of state.
+- This works nicely with a "dashboard," which is useful for corporate management and staff. External testing is also available, allowing for contrast of the two.
+- It may execute quantitative risk mitigation of the report based on OSSTMM audit findings, resulting in a better outcome owing to a more accurate and free results mistake.
+
 
 ## ISSAF
-ISSAF (Information Systems Assessment Framework)
-is designed to evaluate your network, system and control applications. It is focused on three phases and nine evaluation steps. [2]
+The ISSAF (Information Systems Assessment Framework) is a tool that may be used to assess your network, system, and control applications. It is divided into three phases plus nine processes for evaluation. [2]
 
 The approach includes the following three phases:
 
@@ -107,6 +108,7 @@ After completion of all test cases defined in the scope of work, a written repor
 
 All information that is created and/or stored on the test systems must be removed from these systems. If these are for some reason not possible to remove from a remote system, all these files (with their location) should be mentioned in the technical report so that the customer and the technical staff would be able to delete these after the report has been received.
 
+
 ## OWASP
 **What is OWASP**
 
@@ -121,55 +123,25 @@ Currently OWASP actually has several projects in which the categories Tool Proje
 
 **A01: 2021 - Broken Access Control (formerly A05 OWASP Top 10 2017)**
 
-Topping the list as the most serious web application security risk, broken access control had 34 CWEs assigned to it. That's more occurrences in applications than in any other category. A web application's access control model is closely related to the content and functions provided by the site. If not configured correctly, hackers can gain access to sensitive files and deface the site.
-
 **A02: 2021 - Cryptographic flaws (formerly A03 OWASP Top 10 2017)**
-
-Cryptanalytic software involves different software programs that are used to decrypt encryptions. Formally called Confidential Data Exposure, a cryptographic flaw means that information that is supposed to be protected from untrusted sources has been disclosed to attackers. Hackers can access information such as credit card processor data or other authentication credentials.
 
 **A03: 2021 - Injection (formerly A01 OWASP Top 10 2017)**
 
-When an attacker uses malicious SQL code to manipulate a backend database to reveal sensitive information, it is called an injection attack. Injection flaws, such as NoSQL, OS, LDAP and SQL injection, occur when untrusted data is sent to an interpreter as part of a command or query.
-
-Cross-Site Scripting (XSS) attacks are another type of injection. Malicious scripts are injected into trusted, benign websites that can rewrite HTML page content.
-
-Server-Side Request Forgery (SSRF) is a type of attack that can occur when a hacker can not only view unauthorized lists, delete tables and have unauthorized administrative access, but also perform remote code execution from the back-end server of a vulnerable web application.
-
 **A04: 2021 - Insecure Design (NEW)**
-
-This is a new category for 2021 and the focus is on risks related to design flaws. More threat models, secure design patterns and principles, and reference architectures are needed to protect against insecure designs for web pages.
-
-This is an important addition because developers must be aware of how design and architectural concepts must be configured and implemented correctly in code. Incorrect implementation of design and architectural concepts in code can create security vulnerabilities.
 
 **A05: 2021 - Security misconfiguration (formerly A06 OWASP Top 10 2017).**
 
-XML external entity attacks have been incorporated into a security misconfiguration this year. It is a growing threat due to more changes in software configurations.
-
 **A06: 2021 - Vulnerable and obsolete components (formerly A09 OWASP Top 10 2017).**
-
-Formerly titled Use of Components with Known Vulnerabilities, this category represents a known issue that OWASP experts have found that many continue to struggle to prove risk assessment.
-
-Many security issues have been attributed to outdated third-party software components. This is compounded by the growing concern that time to exploit is shrinking and organizations are not patching or remediating vulnerabilities fast enough.
 
 **A07: 2021 - Identification and authentication flaws (formerly A02 OWASP Top 10 2017).**
 
-Authentication vulnerabilities as a category have fallen from the second position in the top ten because the increased availability of standardized frameworks seems to be helping. Previously called a broken authentication vulnerability because it can result in a denial of service when user accounts cannot be authenticated. Multifactor authentication is not implemented in most cases. It now includes CWEs that are more related to identification failures.
-
 **A08: 2021 - Data and software integrity failures (NEW)**
-
-As a new category for 2021, focuses on making assumptions related to software upgrades, critical data and CI/CD pipelines without verifying integrity.
 
 **A8: 2017 - Insecure deserialization is now part of this broader category.**
 
-Growing concern over recent attacks associated with the SolarWinds breach and protection of the build environment increases the importance of this threat. Software integrity has been specifically mentioned in the Cybersecurity Executive Order, section 4.
-
 **A09: 2021 - Security tracking and logging flaws (formerly A10 OWASP Top 10 2017).**
 
-This category has been expanded to include more types of flaws that can directly affect visibility, incident alerts and forensics.
-
 **A10: 2021 - Server-side request forgery (NEW).**
-
-Data shows that there is a low incidence rate for this category that was just added to the Top 10.
 
 
 ## PTES
@@ -178,6 +150,7 @@ PTES (Penetration Testing Execution Standard) is a standard which provides a com
 PTES provides the client with a reference on the security posture so that they are in a better position to perceive the findings obtained during a penetration test.
 
 PTES is designed as the minimum necessary to be performed as part of a complete penetration test. The standard contains many different levels of services, which should be part of advanced penetration testing.
+
 
 ## NIST (NIST SP800-115)
 NIST (The National Institute of Standards  and Technology) was published in September 2008 by the U.S. government's National Institute of Standards and Technology (NIST). It describes guidelines on how an Information Security Assessment (ISA) should be conducted and conceptualizes it as the process of determining how effectively an entity is assessed against specific security objectives. It defines as assets and objects of evaluation the servers, data networks, procedures and people. [5]
